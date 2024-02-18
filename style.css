@@ -1,0 +1,678 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #000000;
+  padding-top :100px;
+}
+.head{
+  width: 100%;
+  height: 50px;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  
+}
+.main-btn{
+  width: 100%;
+  height: 50px;
+  background-color: #000000;
+  position: fixed;
+  top: 50px;
+  
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  z-index: 1;
+  padding-top: 5px;
+  
+}
+.main-btn li{
+  list-style: none;
+  padding: 1px 35px;
+  margin: 0 5px;
+  
+}
+.main-btn li:hover{
+  border-bottom: 3px dashed #FFFFFF;
+  
+  
+}
+
+.main-btn li i:hover{
+  border-radius: 5px;
+  background-color: #FF9995;
+  cursor: pointer;
+}
+  
+.main-btn li i{
+  font-size: 25px;
+  padding: 5px;
+  color: #3EFFF8;
+  
+}
+  
+.navigation{
+  height: 500px;
+  width: 0;
+  position: fixed;
+  z-index: 5;
+  top: 55px;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.2s;
+  background-color:#5E69E2 ;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  
+}
+
+.navigation li {
+list-style-type: none;
+cursor: pointer;
+display:flex;
+align-items: center;
+justify-content: center;
+padding: 25px 0;
+border-bottom: 1px solid;
+
+}
+
+.navigation li a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+}
+.navigation li:hover{
+  background-color: #FF48C5;
+}
+.navigation li i{
+  margin: 0 10px;
+  font-size: 25px;
+  color:#FFFFFF;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #FF4CD2;
+}
+.nav-profile{
+  text-align: center;
+  background-color: #6CFF4E;
+  width: 100%;
+  
+}
+.nav-profile img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius :50%;
+  border: 2px solid;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: 40px;
+  text-decoration: none;
+  padding:2px 10px;
+  color: #000000;
+}
+.name{
+  margin-left: 5px;
+}
+.name h1{
+  color: #F0CBCB;
+}
+.time{
+  color: #FFFFFF;
+}
+.social{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:200px;
+  
+}
+.social div{
+  margin:0 5px;
+}
+.fb {
+border: 2px solid;
+cursor: pointer;
+}
+
+.fb i{
+font-size: 40px;
+padding: 5px;
+color: #4E9BFF;
+}
+.whatsup  {
+  border: 2px solid;
+  cursor: pointer;
+}
+.whatsup i{
+  font-size: 40px;
+  padding: 5px;
+  color: #45FF55;
+}
+.bars {
+  border: 2px solid;
+  cursor: pointer;
+  
+}
+.bars i{
+  font-size: 40px;
+  padding: 5px;
+  color: #FF8A8A;
+}
+/*Body start*/
+#home{
+  width: 100%;
+  background-color: #000000;
+  position: relative;
+  
+}
+
+.imgdiv{
+  width:100%;
+  height:500px;
+  box-shadow: rgba(0, 0, 0, 1) 0px -90px 36px -28px inset;
+background-color: #67F7FF;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 1) 0px -90px 36px -28px inset;
+  border-radius: 15px ;
+  padding-top: 5px ;
+  overflow: hidden;
+}
+
+.imgdiv span{
+  width: 100%;
+ height: 40px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #000000;
+  box-shadow: rgba(0, 0, 0, 1) 0px -30px 36px 40px  ;
+}
+.imgdiv img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  
+}
+
+.text-ariea{
+  width: 100%;
+  color: #FFFFFF;
+  visibility: hidden;
+  margin-top: 5px ;
+  text-align: center;
+  
+}
+.text-ariea p{
+  font-size :25px ;
+}
+.text-ariea h1{
+  font-size :35px ;
+  
+}
+.text-ariea .introduced{
+  color: #FFFFFF;
+  font-size: 15px;
+  text-align: center;
+  
+  
+  
+}
+.text-ariea h1 span{
+  color: #FF1919;
+  font-weight: 500px;
+  letter-spacing: 1px;
+}
+/*
+#container .view-btn {
+  width :250px ;
+  height: 30px;
+  padding: 10px 20px;
+  background-color: #06FFBE;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  text-align: center ;
+  font-size: 25px ;
+  border-radius: 5px ;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  
+}
+
+.container-2{
+  width: 100%;
+  background-color: #97ABA7;
+  height: 500px;
+  display: flex;
+  align-items: center ;
+  position: relative;
+}
+.imgdiv-2{
+  width:250px;
+  height: 100%;
+  position: absolute;
+  text-align: right;
+  right: 0;
+}
+.imgdiv-2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transform: scaleX(-1);
+
+}
+*/
+.skil{
+  width: 100%;
+  position: relative;
+  color: #FFFFFF;
+  
+  
+}
+.skil p{
+  text-align:left ;
+  padding-left: 5px ;
+}
+.progress{
+  padding: 15px 3px;
+  position: relative;
+  
+  
+}
+.skills {
+  text-align: right;
+  color: white;
+  border-radius: 3px ;
+  padding: 8px 1px;
+  margin-left :30px ;
+}
+
+
+.skil-logo{
+  width :10%;
+  object-fit: cover ;
+  position: absolute;
+  left:-8px;
+  top: 8px;
+  
+  
+  
+}
+.html {width: 90%; background-color: #f1672b;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 70%; background-color: #E7CF2A;}
+.php {width: 60%; background-color: #4D4C7D;}
+.java {width: 50%; background-color: #FF4242;}
+
+/*section start*/
+.section-1{
+  width: 100%;;
+  position: relative;
+  
+  
+  
+}
+
+.profile-card{
+  width: 100%;
+  background-color: #000000;
+  padding-top :105px ;
+  color: #FFFFFF;
+  
+}
+.cover-pic{
+  width: 100%;
+  height: 200px;
+  position: relative;
+  
+}
+.cover-pic .cover-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+.profile{
+  width: 200px;
+  height: 200px;
+  border: 2px solid;
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.profile .profile-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.profile-name {
+  text-align: center;
+  margin-top: 100px;
+}
+.profile-name h1{
+  font-size: 30px;
+}
+.profile-name span{
+  font-size: 10px;
+}
+.profile-name hr{
+  
+  border: 1px solid;
+}
+.information li i{
+  font-size: 25px;
+  padding: 10px;
+  width: 25px;
+  margin-right: 10px ;
+}
+.information li .fa-house-chimney{
+  color: #00D3FF;
+}
+.information li .fa-graduation-cap{
+  color: #0029FF;
+}
+.information li .fa-heart{
+  color: #FF0000;
+}
+.information li .fa-phone {
+  color: #12C406;
+}
+.information li .fa-user {
+  color: #FFFFFF;
+}
+.information li .fa-location-dot{
+  color: #005B19;
+}
+.information li .fa-cake-candles {
+  color: #DAFF33;
+}
+.information li .fa-envelope{
+  color: #FF4AEC;
+}
+.information li{
+  list-style: none;
+  display:block;
+  align-items: center ;
+  padding: 10px 0;
+ margin-top: 3px;
+ transition: 0.2s ;
+
+}
+  
+.information li b{
+  text-align: center;
+  font-size: 16px ;
+  
+}
+.information .nams{
+  font-size: 25px ;
+}
+.information .nam{
+  font-size:20px ;
+}
+
+/*Foter section*/
+.footer{
+  width: 100%;
+  height: 100px;
+  color: #FFF0F0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+}
+
+.foter-social{
+  width: 100%;
+  display: flex;
+  align-items: center ;
+  justify-content: space-evenly;
+  text-align: center ;
+  position: relative;
+}
+.foter-social li{
+  list-style: none ;
+
+}
+.foter-social li i{
+  display: block;
+  padding: 5px;
+  text-align: center;
+  font-size: 40px ;
+  
+}
+.foter-social li .fbs{
+  color: #0160FF;
+}
+.foter-social li .wh{
+  color: #00FF63;
+}
+.foter-social li .in{
+  color: #FF8738;
+}
+.foter-social li .ma {
+  color: #BBFFD5;
+}
+/*section_2*/
+
+#section-2{
+  width: 100%;
+  position: relative;
+}
+#gallary-div{
+  width: 100%;
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 5px;
+  padding-top: 100px;
+}
+.pic{
+  max-width: 100%;
+  
+  object-fit: cover;
+  border-radius: 10px;
+  transition:0.8s;
+}
+.pic:hover{
+  transform: scale(0.9);
+  filter: grayscale(1);
+}
+
+
+
+
+/*Media query min 360*/
+@media screen and (max-width: 400px){
+  .time{
+    display: none;
+  }
+  .main-btn li{
+    padding: 1px 20px;
+  }
+  .main-btn li i{
+    font-size: 20px ;
+  }
+  .imgdiv{
+    height: 400px;
+    margin-bottom: 22px ;
+  }
+  
+  .imgdiv span{
+    
+    height: 20px;
+    
+  }
+  .text-ariea .introduced{
+    
+  }
+  .skil{
+    margin-top: 18px ;
+    
+  }
+  .progress{
+    
+  }
+  .skil-logo{
+    top: 10px;
+    
+  }
+  .skills{
+    margin-left :21px ;
+  }
+  
+  #container{
+    
+    
+  }
+  .section-1{
+    
+    
+    
+  }
+  
+  .about h1{
+    font-size:20px ;
+  }
+  .profile-card{
+    
+  }
+  .cover-pic{
+    height: 150px;
+  }
+  .profile{
+    width: 150px;
+    height: 150px;
+    top: 120%;
+  }
+  .profile-name {
+    margin-top: 110px 
+  }
+
+  .information .nams{
+    font-size: 18px ;
+  }
+  
+}
+
+#info{
+  visibility: none;
+}
+.head{
+  visibility: none;
+}
+.main-btn {
+  visibility: none;
+}
+.imgdiv{
+  visibility: none;
+}
+.skil li{
+  visibility: none;
+}
+#gallary{
+  visibility: none;
+}
+.profile-card {
+  visibility: none;
+}
+.foter-social{
+  visibility: none;
+}
+/*
+@media screen and (max-width: 441px) {
+    .time{
+    display: none;
+  }
+  .main-btn li{
+    padding: 1px 20px;
+  }
+  .main-btn li i{
+    font-size: 20px ;
+  }
+  .imgdiv{
+    height: 450px;
+    margin-bottom: 22px ;
+    width: 100%;
+  }
+  
+  .imgdiv span{
+    width: 400px;
+    height: 20px;
+    
+  }
+  .text-ariea {
+    margin-top: 10px ;
+  }
+  .skil{
+    margin-top: 20px ;
+    
+  }
+  .progress{
+    
+  }
+  .skil-logo{
+    top: 10px;
+    
+  }
+  .skills{
+    margin-left :25px ;
+    
+  }
+  #container{
+    height: 130vh;
+  }
+  .section-1{
+    margin-top: 10px ;
+    
+  }
+  .about h1{
+font-size:20px ;
+  }
+  .profile-card{
+    
+  }
+  .cover-pic{
+    height: 150px;
+  }
+  .profile{
+    width: 150px;
+    height: 150px;
+    top: 120%;
+  }
+  .profile-name {
+    margin-top: 110px 
+  }
+
+  .information .nams{
+    font-size: 18px ;
+  }
+  
+}
